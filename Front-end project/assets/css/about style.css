@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: #c0a483;
+}
+
+::selection{
+    color: #fff;
+    background-color: #c0a483;
+}
+
+.email{
+    position: relative;
+}
+
+.email::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    background: #e2e2e2;
+    width: 1px;
+    height: 18px;
+    top: calc(50% - 9px);
+}
+
+.social-media{
+    margin-top: 10px;
+}
+
+.social-media i{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+}
+
+.social-media i:hover{
+    color: #fff;
+    background-color: #c0a483;
+    cursor: pointer;
+}
+
+.header-bottom{
+    color: #fff;
+}
+
+.header-bottom{
+    position: relative;
+    height: 900px;
+    background: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about.jpg);
+    background-attachment: fixed;
+}
+
+.header-bottom img{
+    width: 13%;
+}
+
+.header-bottom .text{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header-bottom h2{
+    font-size: 18px;
+}
+
+.header-bottom h1{
+    font-size: 70px;
+}
+
+.header-left{
+    color: #fff;
+}
+
+.header-right{
+    position: relative;
+}
+
+.header-right span{
+    position: absolute;
+    top: -7px;
+    background: #c0a483;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+
+.header-right i{
+    color: #fff;
+}
+
+.header-mobile{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    height: 70px;
+}
+
+.header-mobile img{
+    max-height: 22px;
+}
+
+.header-mobile-image{
+    position: relative;
+    display: none;
+}
+
+.header-mobile-image .text{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.header-mobile-image .text h2{
+    font-size: 18px;
+}
+
+.header-mobile-image .text h1{
+    font-size: 42px;
+}
+
+.header-mobile-image .container{
+    max-width: 100%;
+    padding: 0;
+}
+
+.dropdown{
+    cursor: pointer;
+}
+
+.dropdown::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -5px;
+    left: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: 300ms;
+}
+
+.dropdown:hover span::before{
+    width: 100%;
+    height: 1px;
+}
+
+.dropdown span{
+    position: relative;
+}
+
+.dropdown::after{
+    content: "\25bc";
+    font-size: 10px;
+}
+
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+    min-width: 170px;
+    z-index: 1;
+    padding: 10px 0;
+    top: 35px;
+}
+
+.image{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-content a {
+    color: #868686;
+    padding: 5px 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover{
+    color: #c0a483;
+}
+
+.dropdown:hover .dropdown-content {opacity: 1; visibility: visible;} 
+
+.dropdown-shop{
+    min-width: 700px;
+    opacity: 0;
+    padding: 22px; 
+    visibility: hidden;
+    position: absolute;
+    left: -207px;
+    top: 40px;
+}
+
+.dropdown-shop a{
+    padding: 0;
+}
+
+.dropdown-content h5{
+    position: relative;
+    font-size: 16px;
+    color: #000;
+}
+
+.dropdown-content h5::before{
+    position: absolute;
+    bottom: -4px;
+    width: 40px;
+    height: 1px;
+    background: #c0a483;
+    content: "";
+    left: 0;
+}
+
+.dropdown-product{
+    min-width: 800px;
+    opacity: 0;
+    padding: 22px; 
+    visibility: hidden;
+    position: absolute;
+    left: -207px;
+    top: 40px;
+}
+
+.dropdown-product a{
+    padding: 0;
+}
+
+.dropdown-blog{
+    min-width: 950px;
+    opacity: 0;
+    padding: 22px; 
+    visibility: hidden;
+    position: absolute;
+    left: -207px;
+    top: 40px;
+}
+
+.dropdown-blog a{
+    padding: 0;
+}
+
+.dropdown-blog img{
+    width: 35%;
+}
+
+.dropdown-blog p{
+    font-size: 14px;
+    color: #868686;
+}
+
+.dropdown-content ul{
+    margin-top: 13px;
+}
+
+.header-bottom-rt{
+    position: relative;
+}
+
+.header-bottom-rt i{
+    margin-left: 15px;
+}
+
+.header-bottom-rt i:hover{
+    color: #c0a483;
+    cursor: pointer;
+}
+
+.header-bottom-rt span{
+    position: absolute;
+    top: -7px;
+    right: -1px;
+    background: #c0a483;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+
+
+#sidebar{
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background-color: #fff;
+    width: 30%;
+    height: 100%;
+}
+
+#sidebar span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    width: 100%;
+    height: 50px;
+    background-color: #c0a483;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sidebar a{
+    padding-left: 10px;
+    color: #000;
+    margin: 10px;
+}
+
+#sidebar a:hover{
+    color: #000;
+}
+
+.section-1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-1 .image-1{
+    position: relative;
+    z-index: 1;
+}
+
+.section-1 .text{
+    position: relative;
+    z-index: 1;
+}
+
+.section-1 .text h2{
+    font-size: 20px;
+}
+
+.section-1 .text h3{
+    font-size: 50px;
+}
+
+.section-1 .text p{
+    font-size: 14px;
+}
+
+.section-1 .image{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+}
+
+.section-1 .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-2{
+    margin: 50px 0;
+    height: 700px;
+}
+
+.section-2 .text{
+    text-align: center;
+    padding: 40px;
+}
+
+.section-2 .text span{
+    color: #c0a483;
+}
+
+.section-2 .product{
+    margin: 0 10px;
+}
+
+.section-2 .product-img img{
+    width: 100%;
+}
+
+.section-2 .product-text{
+    text-align: center;
+    margin-top: 10px
+}
+
+.section-2 .product-text p:first-child{
+    font-size: 16px;
+}
+
+.section-2 .product-text p:last-child{
+    color: #c0a483;
+    font-size: 14px;
+}
+
+.section-2 .slider .product-img{
+    position: relative;
+}
+
+.section-2 .slider .product-img .product-button{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 400ms;
+}
+
+.section-2 .slider .product-img:hover .product-button{
+    visibility: visible;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+}
+
+.section-2 .slider .product-button i{
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2 .slider .product-button i:hover{
+    color: #fff;
+    background-color: #c0a483;
+    cursor: pointer;
+}
+
+.section-2 .slider span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #c0a483;
+    color:#fff;
+    text-align: center;
+    width: 50px;
+}
+
+.section-2 .slider .product-img p{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #b12a2a;
+    color:#fff;
+    text-align: center;
+    width: 50px;
+}
+
+
+.section-4{
+    margin: 30px 0;
+    background-color: #FAF4EE;
+}
+
+.section-4 .client-slider{
+    margin: 0 3rem;
+}
+
+.section-4 .text{
+    text-align: center;
+    padding: 40px;
+}
+
+.section-4 .product{
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-4 .product-img{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.section-4 .product-img img{
+    border-radius: 100%;
+}
+
+.section-4 .product-img .last{
+    width: 46%;
+    margin: auto;
+}
+
+.section-4 .product-img p{
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.section-4 .product-text{
+    text-align: center;
+    margin-top: 10px
+}
+
+.section-4 .product-text h2{
+    font-size: 24px;
+}
+
+.section-4 .product-text p{
+    font-size: 14px;
+    color: #868686;
+}
+
+.section-4 .client-slider:hover .slick-next::before{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.section-4 .slick-prev{
+    top: 50%;
+    z-index: 11111111;
+}
+
+.section-4 .client-slider:hover .slick-prev::before{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.section-5{
+    height: 250px;
+    align-items: center;
+    display: flex;
+    margin: 0 10px;
+    background: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about2.jpg)
+}
+
+.section-5 .icon svg{
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+}
+
+.icon{
+    text-align: center;
+    color: #fff;
+}
+
+.icon svg{
+    fill: #fff;
+    border: #fff;
+}
+
+.icon p{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.icon .bottom{
+    font-size: 14px;
+}
+
+.section-8 .image{
+    border: 1px solid #868686;
+}
+
+.section-8 .image img{
+    width: 50%;
+    transition: .5s;
+}
+
+.section-8 .image:hover img{
+    transform: scale(1.1);
+}
+
+.section-8 .top span{
+    color: #c0a483;
+}
+
+.section-7{
+    background-color: #c0a483;
+    color: #fff;
+    height: 200px;
+}
+
+.content{
+    padding: 10px;
+}
+
+.content-left i{
+    font-size: 50px;
+}
+
+.section-7 h2{
+    font-size: 30px;
+}
+
+.section-7 .email{
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.section-7 .submit{
+    width: 100px;
+    height: 53px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.footer-top{
+    padding: 20px;
+    background-color:#F6F6F6;
+}
+
+.footer-bottom{
+    padding: 10px;
+    background-color:#F6F6F6;
+}
+
+.footer-bottom span{
+    color: #868686;
+    font-size: 14px;
+}
+
+.footer-top h5{
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+.footer-top li{
+    font-size: 14px;
+    color: #868686;
+    cursor: pointer;
+}
+
+.footer-top li:hover{
+    color: #c0a483;
+}
+
+.footer-top .contact strong{
+    color: #000;
+    cursor: default;
+}
+
+.footer-top .contact li:hover{
+    color: #868686;
+    cursor: text;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-top{
+        display: block !important;
+    }
+    .footer-bottom{
+        display: block !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .header-bottom{
+        display: none;
+    }
+    header hr{
+       display: none;
+    }
+    .header-mobile{
+        display: flex;
+    }
+    .header-mobile-image{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1200){
+    .header-bottom{
+        display: block;
+    }
+    header hr{
+       display: block;
+    }
+}
